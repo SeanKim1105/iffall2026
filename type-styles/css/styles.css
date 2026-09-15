@@ -1,0 +1,62 @@
+html {
+  color: grey;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 15%;
+}
+
+h1 {
+  color: black;
+  letter-spacing: 0em;
+  text-transform: capitalize;
+}
+
+h2 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.0em;
+}
+
+section {
+  margin: 2.5rem 0;
+}
+
+.demo-item {
+  margin: 1rem 0;
+}
+
+.value-label {
+  font-size: 14px;
+}
+
+.sample {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.fw-100 { font-weight: 100; }
+.fw-300 { font-weight: 300; }
+.fw-400 { font-weight: 400; }
+.fw-500 { font-weight: 500; }
+
+.fs-normal { font-style: normal; }
+.fs-italic { font-style: italic; }
+.fs-oblique { font-style: oblique; }
+
+.ls-normal { letter-spacing: normal; }
+.ls-0.05em { letter-spacing: 0.05em; }
+.ls-0.3em { letter-spacing: 0.3em; }
+
+.tt-regular { text-transform: regular; }
+.tt-uppercase { text-transform: uppercase; }
+.tt-lowercase { text-transform: lowercase; }
+.tt-capitalize { text-transform: capitalize; }
+
+.td-none { text-decoration: none; }
+.td-underline { text-decoration: underline; }
+.td-overline { text-decoration: overline; } 
+.td-line-through { text-decoration: line-through; }
