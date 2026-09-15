@@ -1,0 +1,25 @@
+html {
+  color: rgb(10, 10, 10);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 10%;
+}
+
+
+h1 {
+  color: black;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+  text-indent: 0.1em;
+  font-family: "vista-slab", serif;
+}
+
+header img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
