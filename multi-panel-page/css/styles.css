@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+.content-column {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    margin: 0 0 32px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+h1 {
+    margin: 0 0 16px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.content-column p {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+section {
+    color: white;
+}
+
+section:nth-of-type(1) {
+    background-color: #1e1b4b;
+    background-image: url(../images/Image1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(1) .content-column {
+    padding-top: 160px;
+    padding-bottom: 180px;
+}
+
+section:nth-of-type(2) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: #3730a3;
+}
+
+section:nth-of-type(2) .content-column {
+    display: flow-root;
+}
+
+.main-image {
+    float: right;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top; 
+    margin: 0 0 24px 40px;
+    border: 1px solid #ccc;
+}
+
+section:nth-of-type(3) {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    color: #0f172a;
+    background-color: #f1f5f9;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.photo-grid li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.photo-grid img {
+    flex: 0 0 200px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+      object-position: top;
+}
+
+.photo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.photo-text h4 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.photo-text div {
+    max-width: 30ch;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+section:nth-of-type(4) {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    background-color: #0f766e;
+}
+
+section:nth-of-type(4) .content-column p {
+    width: 720px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+section:nth-of-type(5) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #0f172a;
+}
+
+section:nth-of-type(5) .content-column p {
+    margin: 0;
+}
