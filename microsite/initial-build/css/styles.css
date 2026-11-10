@@ -1,0 +1,699 @@
+
+/* ---------- COLORS AND FONTS ---------- */
+
+:root {
+  --paper: #f7f4eb;
+  --dark-green: #233000;
+  --olive: #5e6600;
+  --body-text: #666a56;
+  --sage: #dce2c9;
+  --sand: #eee9db;
+  --line: #dcd8cb;
+  --line-dark: #c9c6b6;
+  --line-on-dark: rgba(220, 226, 201, 0.3);
+
+  --font-heading: "Rufina", Georgia, serif;
+  --font-body: "Lato", Arial, sans-serif;
+}
+
+/* ---------- BASE ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--body-text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--dark-green);
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 26px;
+  font-size: 72px;
+  line-height: 1.06;
+  letter-spacing: -0.055em;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 1.16;
+  letter-spacing: -0.035em;
+}
+
+h3 {
+  margin-bottom: 14px;
+  font-size: 27px;
+  line-height: 1.25;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+p {
+  margin-bottom: 18px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.eyebrow {
+  margin-bottom: 22px;
+  color: var(--olive);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-intro {
+  margin-bottom: 28px;
+}
+
+.callout {
+  margin-top: 26px;
+  color: var(--olive);
+  font-family: var(--font-heading);
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+figcaption {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  padding: 64px 0 52px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.hero-description {
+  max-width: 470px;
+  margin-bottom: 28px;
+  font-size: 21px;
+  line-height: 1.55;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--dark-green);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link span {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.hero-photo img {
+  height: 600px;
+}
+
+.hero-photo figcaption {
+  font-family: var(--font-heading);
+  font-size: 15px;
+}
+
+/* ---------- TOPIC NAVIGATION ---------- */
+
+.topic-nav {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.topic-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+}
+
+.topic-nav-inner > p {
+  margin: 0;
+  color: var(--dark-green);
+  font-family: var(--font-heading);
+  font-size: 22px;
+}
+
+.topic-nav ul,
+.site-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topic-nav a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--dark-green);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.topic-nav li:first-child a {
+  color: var(--paper);
+  background: var(--dark-green);
+}
+
+.topic-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- DARK SECTIONS ---------- */
+
+.section-dark {
+  color: var(--sage);
+  background: var(--dark-green);
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: var(--paper);
+}
+
+.section-dark .eyebrow,
+.section-dark figcaption {
+  color: var(--sage);
+}
+
+/* ---------- PROPAGATION ---------- */
+
+.section-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.side-note {
+  margin-bottom: 28px;
+  font-family: var(--font-heading);
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+.supplies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 12px 0 36px;
+  padding: 20px 0;
+  border-top: 1px solid var(--line-on-dark);
+  border-bottom: 1px solid var(--line-on-dark);
+  font-size: 14px;
+}
+
+.supplies p {
+  margin: 0;
+}
+
+.supplies strong {
+  text-transform: uppercase;
+}
+
+.propagation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step img {
+  height: 250px;
+  margin-bottom: 22px;
+}
+
+.step h3 {
+  font-size: 23px;
+}
+
+.step-number {
+  margin-right: 10px;
+  color: var(--sage);
+  font-size: 18px;
+}
+
+.step p {
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.section-note {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-on-dark);
+  font-size: 16px;
+}
+
+/* ---------- MEET POTHOS ---------- */
+
+.meet-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.silhouette-figure {
+  text-align: center;
+}
+
+.plant-silhouette {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.silhouette-figure figcaption {
+  color: var(--olive);
+  font-family: var(--font-heading);
+  font-size: 16px;
+}
+
+/* ---------- LIGHT AND EVERYDAY CARE ---------- */
+
+.care-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.85fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.care-list {
+  display: grid;
+  gap: 26px;
+}
+
+.care-list h3 {
+  margin-bottom: 6px;
+  font-size: 25px;
+}
+
+.care-list p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.care-photo {
+  height: 500px;
+}
+
+/* ---------- WATERING ---------- */
+
+.watering-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.soil-check {
+  padding: 38px;
+  background: var(--sand);
+}
+
+.soil-check > h3 {
+  font-size: 33px;
+}
+
+.soil-check > p {
+  font-size: 17px;
+}
+
+.soil-check details {
+  border-top: 1px solid var(--line-dark);
+}
+
+.soil-check details:last-child {
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.soil-check summary {
+  padding: 18px 0;
+  color: var(--dark-green);
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.soil-answer {
+  padding: 4px 0 22px;
+}
+
+.soil-answer p {
+  font-size: 16px;
+}
+
+/* ---------- SOIL AND REPOTTING ---------- */
+
+.soil-section {
+  padding-top: 0;
+}
+
+.soil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.soil-photo {
+  height: 460px;
+}
+
+/* ---------- TROUBLESHOOTING ---------- */
+
+.section-sand {
+  background: var(--sand);
+}
+
+.troubleshooting-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.35fr;
+  gap: 80px;
+}
+
+.faq details {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.faq details:first-child {
+  padding-top: 0;
+}
+
+.faq summary {
+  color: var(--dark-green);
+  font-family: var(--font-heading);
+  font-size: 25px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.faq details p {
+  margin-top: 12px;
+  font-size: 17px;
+}
+
+.safety-note {
+  margin-top: 46px;
+  padding: 28px 32px;
+  background: var(--paper);
+}
+
+.safety-note h3 {
+  font-size: 25px;
+}
+
+.safety-note p {
+  font-size: 16px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  padding: 36px 0;
+  color: var(--sage);
+  background: var(--dark-green);
+}
+
+.footer-top,
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-title {
+  color: var(--paper);
+  font-family: var(--font-heading);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.site-footer ul {
+  gap: 28px;
+}
+
+.site-footer nav a {
+  color: var(--paper);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-on-dark);
+  font-size: 13px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1100px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .soil-section {
+    padding-top: 0;
+  }
+
+  .hero-grid,
+  .meet-grid,
+  .care-grid,
+  .watering-grid,
+  .soil-grid,
+  .troubleshooting-grid {
+    gap: 40px;
+  }
+
+  .topic-nav-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .propagation-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 26px;
+  }
+
+  .step img {
+    height: 300px;
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+  }
+
+  .side-note {
+    max-width: 230px;
+    font-size: 20px;
+  }
+
+  .supplies {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .soil-check {
+    padding: 28px;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+  body {
+    font-size: 17px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .soil-section {
+    padding-top: 0;
+  }
+
+  .hero {
+    padding: 52px 0 36px;
+  }
+
+  .hero-grid,
+  .meet-grid,
+  .care-grid,
+  .watering-grid,
+  .soil-grid,
+  .troubleshooting-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  h1 {
+    font-size: 54px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 19px;
+  }
+
+  .hero-photo img {
+    height: 300px;
+  }
+
+  .topic-nav-inner {
+    padding: 18px 0;
+  }
+
+  .topic-nav ul {
+    gap: 4px;
+  }
+
+  .topic-nav a {
+    padding: 9px 11px;
+    font-size: 13px;
+  }
+
+  .section-heading-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .side-note {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .propagation-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .step img {
+    height: 260px;
+  }
+
+  .step h3 {
+    font-size: 26px;
+  }
+
+  .care-photo {
+    height: 380px;
+  }
+
+  .soil-photo {
+    height: 300px;
+  }
+
+  .soil-check {
+    padding: 26px;
+  }
+
+  .safety-note {
+    padding: 24px;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .site-footer ul {
+    gap: 22px;
+  }
+}
